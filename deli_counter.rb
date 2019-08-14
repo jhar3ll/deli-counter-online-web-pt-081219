@@ -8,7 +8,6 @@ def line(array)
   end
    puts place_in_line
   end
-  
 end
 
 def take_a_number(array, name)
