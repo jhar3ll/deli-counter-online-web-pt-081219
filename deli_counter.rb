@@ -1,21 +1,25 @@
-def line 
-  if
-    puts "The line is currently: #{i}. #{customer}"
-    elsif
-  puts "The line is currently empty"
+def line(array)
+  if array.empty
+    puts "The line is currently empty."
+  else
+    place_in_line = "The line is currently:"
+    array.each.with_index(1) do |person, i|
+      current_line << " #{i}. #{person}"
+    end
+    puts current_line
+  end
 end
 
+def take_a_number(deli, name)
+  deli << name
+  puts "Welcome, #{name}. You are number #{deli.length} in line."
+end
 
-
-def take_a_number(array, string)
-  katz_deli = []
-  
-  i = 1 
-  array.each do |customer|
-    puts "Welcome, #{customer}. You are number #{i} in line"
+def now_serving(deli)
+  if deli.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{deli.first}."
+    deli.shift
   end
-  
-  
-
-def now_serving
-  
+end
