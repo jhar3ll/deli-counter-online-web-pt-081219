@@ -3,7 +3,7 @@ def line(array)
     puts "The line is currently empty."
   else
     place_in_line = "The line is currently:"
-    array.each.with_index do |customer, counter|
+    array.each.with_index(1) do |customer, counter|
     place_in_line <<" #{counter}. #{customer}"
   end
    puts place_in_line
