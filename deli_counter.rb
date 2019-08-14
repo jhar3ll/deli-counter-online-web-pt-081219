@@ -6,8 +6,7 @@ def line(array)
     array.each_with_index(1) do |customer, counter|
     place_in_line <<" #{counter}. #{customer}"
   end
-  
-    puts place_in_line
+   puts place_in_line
   end
   
 end
