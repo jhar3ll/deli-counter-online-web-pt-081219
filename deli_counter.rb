@@ -1,5 +1,5 @@
 def line(array)
-  if array.empty?
+  if array.empty
     puts "The line is currently empty."
   else
     place_in_line = "The line is currently:"
@@ -22,5 +22,5 @@ def now_serving(array)
     puts "Currently serving #{array.first}."
     array.shift
   end
-  
+
 end
